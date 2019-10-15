@@ -1,0 +1,45 @@
+var = secilenler[],kelime[],k,uzunluk,deger, yazilacaksecilenler[]
+
+uzunluk = kullanýcýdan girilicek kelimenin uzunlugunu al
+kelime[uzunluk] = kullanicidan kelimeyi al
+while k<2 :
+	k = kullanýcýdan k sayisini iste
+
+while k>=2 do:
+ for i = 0 to uzunluk
+	for j = i+1 to uzunluk
+	   if j degerine esit eleman varsa:
+		j degerini yeni j ile degistir
+	   if i den kucuk j elemaný varsa:
+		j ve i yi secilenler dizisine ekle, yazilacak secilenler dizisinede ekle
+		
+	if i ve j diziye eklenmisse k = k-2
+
+secilen i indexli harflerin yerine j indexindeki harfleri sýralayýp yerlestir.
+yerlestirilen elemanlari kelimeden cikar.
+	  	
+while k>0 do:
+ for i = 0 to kalan dizi uzunluk:
+	if i secilenler dizisindeyse && dizinin geri kalanýnda yerine gelebilecek kucuk bir eleman varsa:
+		kucuk elemanýn index'ini secilenler[] dizisine, yazilacak secilenler dizisinede ekle
+		k=k-1
+	else if i secilmemisse && secilenler dizinsinde yerine gelebilecek kucuk bir eleman varsa:
+		i yi secilener[] dizisine ekle, yazilacak secilenler dizisinede ekle
+		k=k-1
+	if dizinin sonuna gelinmisse:
+	   for i = kalan dizi uzunluk to 0:
+           	if i secilenler dizisinde bulunmuyorsa:
+			i yi secilenler dizisine ekle
+			k=k-1
+       
+
+for i = 0 to kalan dizi uzunluk:
+	if secilenler.size <1:
+		break
+	if i secilenler[] dizisinde bulunuyorsa:
+		secilenler dizisinden en kucuk elemaný al kelimede yerine koy, elemaný sil
+	  
+
+print kelime
+print kelimenin yeni hali	
+print yazilacaksecilenler
